@@ -199,8 +199,7 @@ Here are the course summary as its given on the course [link](https://www.course
 - **Many to one** like in sentiment analysis
 - **Many to many (same length)** like in named entity recognition
 - **Many to many (diiferent length)** like in machine translation
-
-
+<br>
 - There is another architecture which is the **attention** architecture which we will talk about in chapter 3.
 
 ### Language model and sequence generation
