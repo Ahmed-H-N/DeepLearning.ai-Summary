@@ -200,6 +200,7 @@ Here are the course summary as its given on the course [link](https://www.course
 - **Many to many (same length)** like in named entity recognition
 - **Many to many (diiferent length)** like in machine translation
 
+
 - There is another architecture which is the **attention** architecture which we will talk about in chapter 3.
 
 ### Language model and sequence generation
