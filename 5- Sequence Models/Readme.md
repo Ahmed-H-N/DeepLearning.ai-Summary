@@ -215,6 +215,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - The first thing is to get a **training set**: a large corpus of target language text.
   - Then tokenize this training set by getting the vocabulary and then one-hot each word.
   - Put an end of sentence token `<EOS>` with the vocabulary and include it with each converted sentence. Also, use the token `<UNK>` for the unknown words.
+    - so for example, if the model (after training) encoutered the sentence "The Egyptian Mau is a breed of cat.<EOS>". since Mau is not in the top 10,000 words in english so it will not end up in our vocabulary. So the model will replcae it with `<UNK>` and then the language model will calculate the probability of the sentence using the probability of `<UNK>` exist in its corresponding location in the sentence example.
 - Given the sentence "Cats average 15 hours of sleep a day. `<EOS>`"
   - In training time we will use this:   
     ![](Images/13.png)
