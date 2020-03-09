@@ -194,6 +194,12 @@ Here are the course summary as its given on the course [link](https://www.course
   - There are an encoder and a decoder parts in this architecture. The encoder encodes the input sequence into one matrix and feed it to the decoder to generate the outputs. Encoder and decoder have different weight matrices.
 - Summary of RNN types:   
    ![](Images/12_different_types_of_rnn.jpg)
+- **One to one**, has no special use, it is a typical nn
+- **One to many** like in music generation
+- **Many to one** like in sentiment analysis
+- **Many to many (same length)** like in named entity recognition
+- **Many to many (diiferent length)** like in machine translation
+
 - There is another architecture which is the **attention** architecture which we will talk about in chapter 3.
 
 ### Language model and sequence generation
