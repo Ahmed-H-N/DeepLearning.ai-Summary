@@ -157,7 +157,7 @@ Here are the course summary as its given on the course [link](https://www.course
 - So limitation of the discussed architecture is that it can not learn from elements later in the sequence. To address this problem we will later discuss **Bidirectional RNN**  (BRNN).
 - Now let's discuss the forward propagation equations on the discussed architecture:   
     ![](Images/04.png)
-  - The first activation function (the activation for calculating <sub>a</sub>) is usually tanh or ReLU (and for the tanh there will be other ways to prevent the vanishing gradient which we will discuss later). The second activation function, However, for calculating <sub>y</sub> depends on your task. choosing some activation functions like sigmoid (for binary classification like in NER) or softmax (for k-class classification problem). In name entity recognition task we will use sigmoid because we only have two classes.
+  - The first activation function (the activation for calculating `a`) is usually tanh or ReLU (and for the tanh there will be other ways to prevent the vanishing gradient which we will discuss later). The second activation function, However, for calculating `y` depends on your task. choosing some activation functions like sigmoid (for binary classification like in NER) or softmax (for k-class classification problem).
 - In order to help us develop complex RNN architectures, the last equations needs to be simplified a bit.
 - **Simplified RNN notation**:   
     ![](Images/05.png)
