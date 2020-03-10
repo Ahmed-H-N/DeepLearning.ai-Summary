@@ -375,7 +375,7 @@ Here are the course summary as its given on the course [link](https://www.course
 - Part of the forward propagation goes from left to right, and part - from right to left. It learns from both sides.
 - To make predictions we use y&#770;<sup>\<t></sup> by using the two activations that come from left and right.
 - The blocks here can be any RNN block including the basic RNNs, LSTMs, or GRUs.
-- For a lot of NLP or text processing problems, a BiRNN with LSTM appears to be commonly used.
+- For a lot of NLP or text processing problems, a BiRNN with LSTM appears to be commonly used as the first thing to try.
 - The disadvantage of BiRNNs that you need the entire sequence before you can process it. For example, in live speech recognition if you use BiRNNs you will need to wait for the person who speaks to stop to take the entire sequence and then make your predictions.
 
 ### Deep RNNs
