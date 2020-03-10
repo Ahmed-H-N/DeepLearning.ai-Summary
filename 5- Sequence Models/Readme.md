@@ -345,6 +345,8 @@ Here are the course summary as its given on the course [link](https://www.course
   - The full GRU contains a new gate that is used with to calculate the candidate C. The gate tells you how relevant is C<sup>\<t-1></sup> to C<sup>\<t></sup>
   - Equations:   
     ![](Images/20.png)
+  - note on the above pic : The last line should use an element-wise multiplication "*" instead of a plus sign "+" which is before the  C<sup>\<t-1></sup>. So the equation becomes c<t>=Γu∗c<sup>~\<t></sup>+(1−Γu)∗c<sup>\<t−1><sup> 
+  
   - Shapes are the same
 - So why we use these architectures, why don't we change them, how we know they will work, why not add another gate, why not use the simpler GRU instead of the full GRU; well researchers has experimented over years all the various types of these architectures with many many different versions and also addressing the vanishing gradient problem. They have found that full GRUs are one of the best RNN architectures  to be used for many different problems. You can make your design but put in mind that GRUs and LSTMs are standards.
 
