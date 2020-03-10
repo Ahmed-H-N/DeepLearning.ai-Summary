@@ -360,7 +360,7 @@ Here are the course summary as its given on the course [link](https://www.course
   ![](Images/22.png)
 - Some variants on LSTM includes:
   - LSTM with **peephole connections**.
-    - The normal LSTM with C<sup>\<t-1></sup> included with every gate.
+    - The normal LSTM with C<sup>\<t-1></sup> included with every gate. (look at the video from 06:43 to 07:32)
 - There isn't a universal superior between LSTM and it's variants. One of the advantages of GRU is that it's simpler and can be used to build much bigger network but the LSTM is more powerful and general.
 
 ### Bidirectional RNN
