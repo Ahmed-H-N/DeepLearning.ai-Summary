@@ -196,7 +196,7 @@ Here are the course summary as its given on the course [link](https://www.course
    ![](Images/12_different_types_of_rnn.jpg)
 - **One to one**, has no special use, it is a typical nn
 - **One to many** like in music generation
-- **Many to one** like in sentiment analysis
+- **Many to one** like in sentiment analysis .. or in geneder recognition from speech
 - **Many to many (same length)** like in named entity recognition
 - **Many to many (diiferent length)** like in machine translation
 <br>
