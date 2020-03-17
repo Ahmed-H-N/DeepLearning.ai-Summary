@@ -647,7 +647,7 @@ Here are the course summary as its given on the course [link](https://www.course
     ![](Images/48.png)
   - We need to solve the **gender bias** here. The steps we will discuss can help solve any bias problem but we are focusing here on gender bias.
   - Here are the steps:
-    1. Identify the direction:
+    1. Identify the direction of the bias:
        - Calculate the difference between:
          - e<sub>he</sub> - e<sub>she</sub>
          - e<sub>male</sub> - e<sub>female</sub>
@@ -656,7 +656,7 @@ Here are the course summary as its given on the course [link](https://www.course
        - This will help you find this:   
          ![](Images/49.png)
        - By that we have found the bias direction which is 1D vector and the non-bias vector which is 299D vector.
-    2. Neutralize: For every word that is not definitional, project to get rid of bias.
+    2. Neutralize: For every word that is not definitional (gender by defintion such as "he" and "she"), project them to get rid of bias.
        - Babysitter and doctor need to be neutral so we project them on non-bias axis with the direction of the bias:   
          ![](Images/50.png)
          - After that they will be equal in the term of gender.
