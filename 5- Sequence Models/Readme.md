@@ -506,7 +506,7 @@ Here are the course summary as its given on the course [link](https://www.course
     - Here we are optimizing `E` matrix and layers parameters. We need to maximize the likelihood to predict the next word given the context (previous words).
   - This model was build in 2003 and tends to work pretty decent for learning word embeddings.
 - In the last example we took a window of 6 words that fall behind the word that we want to predict. There are other choices when we are trying to learn word embeddings.
-  - Suppose we have an example: "I want a glass of orange **juice** to go along with my cereal"
+  - Suppose we have an example: "I want a glass of orange **juice** to go along with my cereal" ... from the sentence : "I want a glass of orange juice to go along with my cereal"
   - To learn **juice**, choices of **context** are:
     1. Last 4 words.
        - We use a window of last 4 words (4 is a hyperparameter), "<u>a glass of orange</u>" and try to predict the next word from it.
