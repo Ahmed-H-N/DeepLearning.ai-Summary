@@ -486,6 +486,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - Generally _np.dot(`E`, O<sub>j</sub>) = e<sub>j</sub>_
 - In the next sections, you will see that we first initialize `E` randomly and then try to learn all the parameters of this matrix.
 - In practice it's not efficient to use a dot multiplication when you are trying to extract the embeddings of a specific word, instead, we will use slicing to slice a specific column. In Keras there is an embedding layer that extracts this column with no multiplication.
+    - however we used the notation `E`. O<sub>j</sub> = e<sub>j</sub> because it is easy to be written like that mathematilcally (but not good in the programming sense)
 
 ### Learning Word Embeddings: Word2vec & GloVe
 
