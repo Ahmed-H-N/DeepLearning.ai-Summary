@@ -626,8 +626,8 @@ Here are the course summary as its given on the course [link](https://www.course
   ![](Images/46.png)
   - The embedding matrix may have been trained on say 100 billion words.
   - Number of features in word embedding is 300.
-  - We can use **sum** or **average** given all the words then pass it to a softmax classifier. That makes this classifier works for short or long sentences.
-- One of the problems with this simple model is that it ignores words order. For example "Completely lacking in **good** taste, **good** service, and **good** ambience" has the word _good_ 3 times but its a negative review.
+- A model we can is that We can use **sum** or **average** given all the words then pass it to a softmax classifier. That makes this classifier works for short or long sentences.
+  - One of the problems with this simple model is that it ignores words order. For example "Completely lacking in **good** taste, **good** service, and **good** ambience" has the word _good_ 3 times but its a negative review.
 - A better model uses an RNN for solving this problem:   
   ![](Images/47.png)
   - And so if you train this algorithm, you end up with a pretty decent sentiment classification algorithm.
