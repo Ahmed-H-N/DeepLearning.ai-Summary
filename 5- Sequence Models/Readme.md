@@ -437,7 +437,7 @@ Here are the course summary as its given on the course [link](https://www.course
   2. Transfer embedding to new task with the smaller training set (say, 100k words).
   3. Optional: continue to finetune the word embeddings with new data.
      - You bother doing this if your smaller training set (from step 2) is big enough.
-- Word embeddings tend to make the biggest difference when the task you're trying to carry out has a relatively smaller training set.
+- Word embeddings tend to make the biggest difference when the task you're trying to carry out has a relatively smaller training set. such as 1- Named Entity Recognition, 2- text summerization, 3- co refrence resolution, 4- parsing. but word embeddings has been less useful for 1- language modeling, 2- machine translation (especially if you have large specialized text for your task)
 - Also, one of the advantages of using word embeddings is that it reduces the size of the input!
   - 10,000 one hot compared to 300 features vector. (although this may not be an advantage since the 10,000 one-hot vector is sparse while the 300 feature vector is dense)
 - Word embeddings have an interesting relationship to the face recognition task:   
