@@ -557,6 +557,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - If you have done it that way, there will be frequent words like "the, of, a, and, to, .." that can dominate other words like "orange, apple, durian,..."
   - In practice, we don't take the context uniformly random, instead there are some heuristics to balance the common words and the non-common words.
 - word2vec paper includes 2 ideas of learning word embeddings. One is skip-gram model and another is CBoW (continuous bag-of-words).
+- the key problem with this algorithm with the skip-gram model as presented so far is that the softmax step is very expensive to calculate because needing to sum over your entire vocabulary size into the denominator of the softmax. In the next video I will show you an algorithm that modifies the training objective that makes it run much more efficiently, and therefore lets you apply this in a much bigger training sets as well and therefore learn much better word embeddings. Lets go onto the next video.
 
 #### Negative Sampling
 - Negative sampling allows you to do something similar to the skip-gram model, but with a much more efficient learning algorithm. We will create a different learning problem.
