@@ -536,7 +536,7 @@ Here are the course summary as its given on the course [link](https://www.course
 
     We have converted the problem into a supervised problem.
   - This is not an easy learning problem because learning within -10/+10 words (10 - an example) is hard.
-  - We want to learn this to get our word embeddings model.
+  - however, the goal of this algorithm is not to do well in this supervised problem per se, but rather, We want to learn this to get good word embeddings model.
 - Word2Vec model:
   - Vocabulary size = 10,000 words
   - Let's say that the context word are `c` and the target word is `t`
