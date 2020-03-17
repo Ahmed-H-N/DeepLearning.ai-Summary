@@ -439,7 +439,7 @@ Here are the course summary as its given on the course [link](https://www.course
      - You bother doing this if your smaller training set (from step 2) is big enough.
 - Word embeddings tend to make the biggest difference when the task you're trying to carry out has a relatively smaller training set.
 - Also, one of the advantages of using word embeddings is that it reduces the size of the input!
-  - 10,000 one hot compared to 300 features vector.
+  - 10,000 one hot compared to 300 features vector. (although this may not be an advantage since the 10,000 one-hot vector is sparse while the 300 feature vector is dense)
 - Word embeddings have an interesting relationship to the face recognition task:   
   ![](Images/31.png)
   - In this problem, we encode each face into a vector and then check how similar are these vectors.
