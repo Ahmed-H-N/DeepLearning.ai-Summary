@@ -578,7 +578,7 @@ Here are the course summary as its given on the course [link](https://www.course
 - So the steps to generate the samples are:
   1. Pick a positive context
   2. Pick a k negative contexts from the dictionary.
-- k is recommended to be from 5 to 20 in small datasets. For larger ones - 2 to 5.
+- k is recommended to be from 5 to 20 in small datasets. For larger ones : 2 to 5.
 - We will have a ratio of k negative examples to 1 positive ones in the data we are collecting.
 - Now let's define the model that will learn this supervised learning problem:
   - Lets say that the context word are `c` and the word are `t` and `y` is the target.
@@ -591,6 +591,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - We can sample according to empirical frequencies in words corpus which means according to how often different words appears. But the problem with that is that we will have more frequent words like _the, of, and..._
   - The best is to sample with this equation (according to authors):   
     ![](Images/43.png)
+  - So that's it for the Skip-Gram model. In the next video, I want to share with you yet another version of a word embedding learning algorithm that is maybe even simpler than what you've seen so far. So in the next video, let's learn about the Glove algorithm.
 
 #### GloVe word vectors
 - GloVe is another algorithm for learning the word embedding. It's the simplest of them.
