@@ -470,7 +470,9 @@ Here are the course summary as its given on the course [link](https://www.course
     ![](Images/35.png)
     - `CosineSimilarity(u, v)` = `u . v` / `||u|| ||v||` = cos(&theta;)
     - The top part represents the inner product of `u` and `v` vectors. It will be large if the vectors are very similar.
-- You can also use Euclidean distance as a similarity function (but it rather measures a dissimilarity, so you should take it with negative sign).
+- You can also use Euclidean distance as a similarity function 
+    - `EuclideanDistance(u, v) = ||u - v||^2`
+    - (but it rather measures a dissimilarity, so you should take it with negative sign).
 - We can use this equation to calculate the similarities between word embeddings and on the analogy problem where `u` = e<sub>w</sub> and `v` = e<sub>king</sub> - e<sub>man</sub> + e<sub>woman</sub>
 
 #### Embedding matrix
