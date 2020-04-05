@@ -704,8 +704,12 @@ Here are the course summary as its given on the course [link](https://www.course
 
 #### Picking the most likely sentence
 - There are some similarities between the language model we have learned previously, and the machine translation model we have just discussed, but there are some differences as well.
-- The language model we have learned is very similar to the decoder part of the machine translation model, except for a<sup>\<0></sup>   
+- The language model we have learned earlier in the course is very similar to the decoder part of the sequence to sequence machine translation model, except for a<sup>\<0></sup>   
   ![](Images/55.png)
+- ahmed: we can say that seq2seq models are conditional language models, where instead we feed a<0> to the language model, we rather feed the output of the encoder part (of the seq2seq model) to the decoder (the previously called language model)
+    - so this is what is different about the archtecture. but also we will see now that there is another difference in the we pick the words.
+
+
 - Problems formulations also are different:
   - In language model: P(y<sup>\<1></sup>, ..., y<sup>\<Ty></sup>)
   - In machine translation: P(y<sup>\<1></sup>, ..., y<sup>\<Ty></sup> | x<sup>\<1></sup>, ..., x<sup>\<Tx></sup>)
@@ -725,6 +729,8 @@ Here are the course summary as its given on the course [link](https://www.course
     - The best output for the example we talked about is "Jane is visiting Africa in September."
     - Suppose that when you are choosing with greedy approach, the first two words were "Jane is", the word that may come after that will be "going" as "going" is the most common word that comes after "<Noun> is" so the result may look like this: "Jane is going to be visiting Africa in September.". And that isn't the best/optimal solution.
 - So what is better than greedy approach, is to get an approximate solution, that will try to maximize the output (the last equation above).
+  
+- ahmed: also note that we have to use an algorithm because we cant enumerate all the possibilities of sentences and choose the highest probability. for example, if our vocabulay contains 10,000 words, and the sentence should be 10 words in length, then the total combination is 10,000^10 (ahmed: i want to validate that number). as we see it is exponentially large  
 
 #### Beam Search
 - Beam search is the most widely used algorithm to get the best output sequence. It's a heuristic search algorithm.
