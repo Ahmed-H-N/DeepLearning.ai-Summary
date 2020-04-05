@@ -925,7 +925,9 @@ Here are the course summary as its given on the course [link](https://www.course
   - The ideas were taken from this paper:
     - [Graves et al., 2006. Connectionist Temporal Classification: Labeling unsegmented sequence data with recurrent neural networks](https://dl.acm.org/citation.cfm?id=1143891)
     - This paper's ideas were also used by Baidu's DeepSpeech.
-- Using both attention model and CTC cost can help you to build an accurate speech recognition system.
+- attention models and CTC cost are two options you can use to build speech recognition system.
+
+- building an effective speech processing system requires lots of effort and large datasets, an easier task is trigger word detection which requires small datasets. this what we will look at next.
 
 #### Trigger Word Detection
 - With the rise of deep learning speech recognition, there are a lot of devices that can be waked up by saying some words with your voice. These systems are called trigger word detection systems.
