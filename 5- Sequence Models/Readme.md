@@ -845,7 +845,7 @@ Here are the course summary as its given on the course [link](https://www.course
     ![](Images/63.png)
   - The encoder should memorize this long sequence into one vector, and the decoder has to process this vector to generate the translation.
   - If a human would translate this sentence, he/she wouldn't read the whole sentence and memorize it then try to translate it. He/she translates a part at a time.
-  - The performance of this model decreases if a sentence is long.
+  - The performance of this model decreases if a sentence is long. (ahmed: short senteces are also hard to translate,,, hard to get all the words right.)
   - We will discuss the attention model that works like a human that looks at parts at a time. That will significantly increase the accuracy even with longer sequence:   
     ![](Images/64.png)
     -  Blue is the normal model, while green is the model with attention mechanism.
