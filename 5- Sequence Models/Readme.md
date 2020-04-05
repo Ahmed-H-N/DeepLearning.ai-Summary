@@ -902,9 +902,10 @@ Here are the course summary as its given on the course [link](https://www.course
   - Because even human ear doesn't process raw wave forms, the human ear can process different frequencies.
   - There's a common preprocessing step for an audio - generate a spectrogram which works similarly to human ears.   
     ![](Images/76.png)
-    - The horizontal axis is time while the vertical is frequencies. Intensity of different colors shows the amount of energy - how loud is the sound for different frequencies (a human ear does a very similar preprocessing step).
+  - The horizontal axis is time while the vertical is frequencies. Intensity of different colors shows the amount of energy - how loud is the sound for different frequencies (a human ear does a very similar preprocessing step).
   - A spectrogram is computed by sliding a window over the raw audio signal, and calculates the most active frequencies in each window using a Fourier transformation.
-  - In the past days, speech recognition systems were built using _phonemes_ that are a hand engineered basic units of sound.  Linguists used to hypothesize that writing down audio in terms of these basic units of sound called _phonemes_ would be the best way to do speech recognition.
+  
+- In the past days, speech recognition systems were built using _phonemes_ that are a hand engineered basic units of sound.  Linguists used to hypothesize that writing down audio in terms of these basic units of sound called _phonemes_ would be the best way to do speech recognition.
   - End-to-end deep learning found that phonemes was no longer needed. One of the things that made this possible is the large audio datasets.
   - Research papers have around 300 - 3000 hours of training data while the best commercial systems are now trained on over 100,000 hours of audio.
 - You can build an accurate speech recognition system using the attention model that we have descried in the previous section (where the inputs are the time frames of the audio, and the output is the transcript):   
