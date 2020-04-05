@@ -883,7 +883,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - Now we need to know how to calculate e<sup>\<t, t'></sup>. We will compute e using a small neural network (usually 1-layer, because we will need to compute this a lot):   
     ![](Images/73.png)
     - s<sup>\<t-1></sup> is the hidden state of the RNN s, and a<sup>\<t'></sup> is the activation of the other bidirectional RNN. 
-- One of the disadvantages of this algorithm is that it takes quadratic time or quadratic cost to run.
+- One of the disadvantages of this algorithm is that it takes quadratic time or quadratic cost to run. (ahmed: which is T_x * T_y, nut since we use this for machine translation, this usually is not a porblem. however, some research try to reduce this time)
 - One fun way to see how attention works is by visualizing the attention weights:   
   ![](Images/74.png)
 
