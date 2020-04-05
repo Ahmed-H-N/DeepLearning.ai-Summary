@@ -699,6 +699,8 @@ Here are the course summary as its given on the course [link](https://www.course
     - [Maoet et. al., 2014. Deep captioning with multimodal recurrent neural networks](https://arxiv.org/abs/1412.6632)
     - [Vinyals et. al., 2014. Show and tell: Neural image caption generator](https://arxiv.org/abs/1411.4555)
     - [Karpathy and Li, 2015. Deep visual-semantic alignments for generating image descriptions](https://cs.stanford.edu/people/karpathy/cvpr2015.pdf)
+    
+- there is a difference between a 1- synthesizing novel text using **language model** which aim is to predict the next word (at random), and 2- translation where you want the best translation (or image captioning where you you want the best caption). in the next video we will see how to pick the best sentence
 
 #### Picking the most likely sentence
 - There are some similarities between the language model we have learned previously, and the machine translation model we have just discussed, but there are some differences as well.
