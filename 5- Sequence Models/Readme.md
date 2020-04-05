@@ -768,7 +768,9 @@ Here are the course summary as its given on the course [link](https://www.course
 
 #### Error analysis in beam search
 - We have talked before on **Error analysis** in _"Structuring Machine Learning Projects"_ course. We will apply these concepts to improve our beam search algorithm.
-- We will use error analysis to figure out if the `B` hyperparameter of the beam search is the problem (it doesn't get an optimal solution) or in our RNN part.
+- We will use error analysis to figure out the source of the error.
+- our model has two components: the Beam seatch algorithm and the RNN 
+  - so we want to know if the `B` hyperparameter of the beam search is the problem (it doesn't get an optimal solution) or in our RNN part.
 - Let's take an example:
   - Initial info:
     - x = "Jane visite l’Afrique en septembre."
