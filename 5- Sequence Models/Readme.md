@@ -907,7 +907,7 @@ Here are the course summary as its given on the course [link](https://www.course
   - In the past days, speech recognition systems were built using _phonemes_ that are a hand engineered basic units of sound.  Linguists used to hypothesize that writing down audio in terms of these basic units of sound called _phonemes_ would be the best way to do speech recognition.
   - End-to-end deep learning found that phonemes was no longer needed. One of the things that made this possible is the large audio datasets.
   - Research papers have around 300 - 3000 hours of training data while the best commercial systems are now trained on over 100,000 hours of audio.
-- You can build an accurate speech recognition system using the attention model that we have descried in the previous section:   
+- You can build an accurate speech recognition system using the attention model that we have descried in the previous section (where the inputs are the time frames of the audio, and the output is the transcript):   
   ![](Images/77.png)
 - One of the methods that seem to work well is _CTC cost_ which stands for "Connectionist temporal classification" 
   - To explain this let's say that Y = "the quick brown fox"
