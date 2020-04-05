@@ -833,6 +833,7 @@ Here are the course summary as its given on the course [link](https://www.course
     - For example if we want BLEU for 4, we compute P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub>, P<sub>4</sub> and then average them and take the exp.
   - **BP** is called **BP penalty** which stands for brevity penalty. It turns out that if a machine outputs a small number of words it will get a better score so we need to handle that.   
     ![](Images/62.png)
+- **ahmed:the above picture is has an erratum** : each the two variables (MT_output_length, reference_output_length) should take the place of the other
 - BLEU score has several open source implementations. 
 - It is used in a variety of systems like machine translation and image captioning.
 
