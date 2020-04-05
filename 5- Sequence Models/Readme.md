@@ -789,6 +789,8 @@ Here are the course summary as its given on the course [link](https://www.course
   - `B` for beam search, `R` is for the RNN.
   - Get counts and decide what to work on next.
 
+- notice: There's some subtleties pertaining to length normalizations that I'm skipping over. whihc is, if you are using some sort of length normalization, instead of evaluating these probabilities, you should be evaluating the optimization objective that takes into account length normalization. But i am ignoring that complication for now.
+
 #### BLEU Score
 - One of the challenges of machine translation, is that given a sentence in a language there are one or more possible good translation in another language. So how do we evaluate our results?
 - The way we do this is by using **BLEU score**. BLEU stands for _bilingual evaluation understudy_.
