@@ -707,9 +707,9 @@ Here are the course summary as its given on the course [link](https://www.course
 - The language model we have learned earlier in the course is very similar to the decoder part of the sequence to sequence machine translation model, except for a<sup>\<0></sup>   
   ![](Images/55.png)
 - ahmed: we can say that seq2seq models are conditional language models, where instead we feed a<0> to the language model, we rather feed the output of the encoder part (of the seq2seq model) to the decoder (the previously called language model)
-    - so this is what is different about the archtecture. but also we will see now that there is another difference in the we pick the words.
+    - so this is what is different about the archtecture. but also we will see now that there is another difference in the why we pick the words.
 
-
+<br>
 - Problems formulations also are different:
   - In language model: P(y<sup>\<1></sup>, ..., y<sup>\<Ty></sup>)
   - In machine translation: P(y<sup>\<1></sup>, ..., y<sup>\<Ty></sup> | x<sup>\<1></sup>, ..., x<sup>\<Tx></sup>)
